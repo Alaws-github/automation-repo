@@ -31,8 +31,19 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/**/*.js',
     ],
+    suites: {
+        addToCart: [
+            './test/specs/addToCart/*.js'
+        ],
+        authentication: [
+            './test/specs/authentication/*.js'
+        ],
+        checkout: [
+            './test/specs/checkout/*.js'
+        ],
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
