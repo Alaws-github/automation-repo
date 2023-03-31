@@ -1,0 +1,11 @@
+default:
+  image: node:19
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - npm ci --cache .npm --prefer-offline
+    - npm run authentication
